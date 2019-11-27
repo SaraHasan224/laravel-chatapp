@@ -1,0 +1,13 @@
+.form-group.required .col-form-label:after {
+    content:"*";
+    color:red;
+    margin-left: 5px;
+}
+@media(max-width: 480px) {
+    .modal_table td {
+        display:block;
+    }
+    .modal_table th {
+        display:block;
+    }
+}
