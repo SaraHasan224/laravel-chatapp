@@ -22,3 +22,6 @@ Route::post('generate-event', 'HomeController@generatePublicEvent');
 
 Route::get('activity','ActivityController@index');
 Route::post('record-activity','ActivityController@recordActivity');
+
+Route::get('route','RouteController@index');
+Route::post('record-activity','RouteController@recordRouteCoords');

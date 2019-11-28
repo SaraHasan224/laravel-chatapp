@@ -54,6 +54,15 @@
                                         Chat App
                                     </a>
                                 </li>
+                                <!-- MAP -->
+                                <li class="app-sidebar__heading">Route Management</li>
+                                <!-- Chats -->
+                                <li class="{{ Request::is('route') ? 'mm-active' : '' }}">
+                                    <a href="{{ url('route') }}">
+                                        <i class="metismenu-icon pe-7s-rocket"></i>
+                                        Route Management
+                                    </a>
+                                </li>
                             </ul>
                         </div>
                     </div>

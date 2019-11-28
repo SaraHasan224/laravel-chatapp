@@ -15,9 +15,10 @@
 //    return (int) $user->id === (int) $id;
 //});
 
-//Broadcast::channel('user.*', function ($user, $userId) {
-//    return $user->id === \App\Message::find($userId)->user_id;
-//});
 Broadcast::channel('activity.{id}', function ($user, $id) {
+    return (int) $user->id === (int) $id;
+});
+
+Broadcast::channel('routes.{id}', function ($user, $id) {
     return (int) $user->id === (int) $id;
 });
