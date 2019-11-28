@@ -17,6 +17,7 @@
 Auth::routes();
 
 Route::get('/', 'HomeController@index')->name('home');
+Route::post('generate-event', 'HomeController@generatePublicEvent');
 
 
 Route::get('/chat', 'ChatsController@index');
