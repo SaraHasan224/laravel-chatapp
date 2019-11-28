@@ -20,8 +20,5 @@ Route::get('/', 'HomeController@index')->name('home');
 Route::post('generate-event', 'HomeController@generatePublicEvent');
 
 
-Route::get('/chat', 'ChatsController@index');
-Route::get('messages', 'ChatsController@fetchMessages');
-Route::post('messages', 'ChatsController@sendMessage');
-
-
+Route::get('activity','ActivityController@index');
+Route::post('record-activity','ActivityController@recordActivity');

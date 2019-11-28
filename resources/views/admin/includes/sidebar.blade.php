@@ -48,26 +48,11 @@
                                 <!-- Chats MANAGEMENT -->
                                 <li class="app-sidebar__heading">CHAT APP</li>
                                 <!-- Chats -->
-                                <li>
-                                    <a>
-                                        <i class="metismenu-icon pe-7s-settings"></i>
-                                        Chats
-                                        <i class="metismenu-state-icon pe-7s-angle-down caret-left"></i>
+                                <li class="{{ Request::is('activity') ? 'mm-active' : '' }}">
+                                    <a href="{{ url('activity') }}">
+                                        <i class="metismenu-icon pe-7s-rocket"></i>
+                                        Chat App
                                     </a>
-                                    <ul>
-                                        <li class="{{ Request::is('caravan-base/operator') ? 'mm-active' : '' }}">
-                                            <a href="{{ url('caravan-base/operator') }}">
-                                                <i class="metismenu-icon"></i>
-                                                View All
-                                            </a>
-                                        </li>
-                                        <li class="{{ Request::is('caravan-base/operator/create') ? 'mm-active' : '' }}">
-                                            <a href="{{ url('caravan-base/operator/create') }}">
-                                                <i class="metismenu-icon"></i>
-                                                Send New
-                                            </a>
-                                        </li>
-                                    </ul>
                                 </li>
                             </ul>
                         </div>
